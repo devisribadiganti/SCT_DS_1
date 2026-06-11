@@ -1,0 +1,10 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df= pd.read_csv("laptop_data (1).csv")
+plt.figure(figsize=(7,6))
+plt.hist(df["Price"],bins=15)
+plt.xlabel("Price")
+plt.ylabel("Frequency")
+plt.title("Distribution of Laptop Prices")
+plt.savefig("histogram.png")
+plt.show()
